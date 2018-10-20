@@ -16,6 +16,8 @@
 		228D476519F5DAA000DE9903 /* Photo_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D476419F5DAA000DE9903 /* Photo_MapTests.swift */; };
 		228D477019F5DAFF00DE9903 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D476F19F5DAFF00DE9903 /* LocationsViewController.swift */; };
 		22BB9BD519F5DD21000048C2 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB9BD419F5DD21000048C2 /* LocationCell.swift */; };
+		AAA2D9F42177CF5600603DEE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA2D9F32177CF5600603DEE /* MapKit.framework */; };
+		AADEC66A217BD71500D9FF84 /* photoAnno.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEC669217BD71400D9FF84 /* photoAnno.swift */; };
 		C0BB236311B5B261447DED51 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B190D8026AA9DA033871B1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		228D476F19F5DAFF00DE9903 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		22BB9BD419F5DD21000048C2 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		3798A91E53EF9F5C294484AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AAA2D9F32177CF5600603DEE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AADEC669217BD71400D9FF84 /* photoAnno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoAnno.swift; sourceTree = "<group>"; };
 		F5BE47FFEDE0C18F03BCCC32 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA2D9F42177CF5600603DEE /* MapKit.framework in Frameworks */,
 				C0BB236311B5B261447DED51 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +96,7 @@
 		228D474B19F5DA9F00DE9903 /* Photo Map */ = {
 			isa = PBXGroup;
 			children = (
+				AADEC668217BD6E600D9FF84 /* objects */,
 				22BB9BD319F5DCE9000048C2 /* Views */,
 				228D476E19F5DAA800DE9903 /* View Controllers */,
 				228D474E19F5DA9F00DE9903 /* AppDelegate.swift */,
@@ -155,9 +161,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AADEC668217BD6E600D9FF84 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				AADEC669217BD71400D9FF84 /* photoAnno.swift */,
+			);
+			name = objects;
+			sourceTree = "<group>";
+		};
 		C53175EB32E8EEC8585BFFB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAA2D9F32177CF5600603DEE /* MapKit.framework */,
 				12B190D8026AA9DA033871B1 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -318,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADEC66A217BD71500D9FF84 /* photoAnno.swift in Sources */,
 				11D16EF51BD08ABE00B6CBFE /* FullImageViewController.swift in Sources */,
 				22BB9BD519F5DD21000048C2 /* LocationCell.swift in Sources */,
 				228D474F19F5DA9F00DE9903 /* AppDelegate.swift in Sources */,
